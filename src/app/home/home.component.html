@@ -1,0 +1,38 @@
+<div id="content" class="site-content ish-content-parallax">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main">
+      <div class="ish-container-fluid">
+        <div class="ish-container-inner">
+          <div class="ish-main-content ish-pflo-gal ish-scroll-anim ish-2col">
+            <div *ngFor="let item of portfolios" class="ish-item">
+              <div class="ish-item-container">
+                <div class="ish-caption-container">
+                  <div class="ish-caption">
+                    <span class="ish-h4 ish-txt-color7">{{item.name}}</span>
+                    <span class="ish-separator">/</span>
+                    <span>{{item.tag}}</span>
+                  </div>
+                </div>
+                <div class="ish-img">
+                  <a [href]="item.url" class="ish-img-scale">
+                    <img [src]="item.img" [alt]="item.name">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ish-container-fluid ish-pagination-container">
+        <div class="ish-container-inner">
+          <nav class="ish-pagination">
+            <h2 class="screen-reader-text">Portfolio navigation</h2>
+            <div class="ish-nav-links">
+              <span class="ish-h4 ish-txt-color7">Show all portfolios</span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
